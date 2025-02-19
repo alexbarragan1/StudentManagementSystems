@@ -34,14 +34,3 @@ class Course:
     def list_students(self):
         for student in self._enrolled_students:
             student.display_info()
-
-student1 = Student("Alice", "S12345", 3.8)
-student2 = Student("Bob", "S67890", 3.5)
-
-course = Course("Python Course")
-course.add_student(student1)
-course.add_student(student2)
-
-course.list_students()
-student1.mark_attendance()
-print("Attendance for Alice:", student1.get_attendance())
